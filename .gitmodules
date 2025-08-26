@@ -1,0 +1,6 @@
+[submodule "Assets/RootProject/Editor/SupportChigadio"]
+	path = Assets/RootProject/Editor/SupportChigadio
+	url = https://github.com/ChigaDio/SupportChigadio.git
+[submodule "Assets/RootProject/Support/SupportChigadio"]
+	path = Assets/RootProject/Support/SupportChigadio
+	url = https://github.com/ChigaDio/SupportChigadio.git
