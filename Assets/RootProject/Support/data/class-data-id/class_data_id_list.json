@@ -2,5 +2,21 @@
   {
     "id": 1,
     "name": "GameCharacter"
+  },
+  {
+    "id": 2,
+    "name": "ConditionType"
+  },
+  {
+    "id": 3,
+    "name": "TrainingType"
+  },
+  {
+    "id": 4,
+    "name": "RankModifier"
+  },
+  {
+    "id": 5,
+    "name": "StatusRankScore"
   }
 ]

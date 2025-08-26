@@ -1,0 +1,32 @@
+{
+  "columns": [
+    {
+      "name": "adjustment",
+      "type": "float"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Training",
+      "description": "育成",
+      "data": {
+        "adjustment": {
+          "value": 400,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "Other       ",
+      "description": "その他",
+      "data": {
+        "adjustment": {
+          "value": 0,
+          "type": "float"
+        }
+      }
+    }
+  ]
+}

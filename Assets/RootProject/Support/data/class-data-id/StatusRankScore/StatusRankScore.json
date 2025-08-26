@@ -1,0 +1,194 @@
+{
+  "columns": [
+    {
+      "type": "int",
+      "name": "performanceScore"
+    },
+    {
+      "type": "float",
+      "name": "rating"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "F",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 66,
+          "type": "int"
+        },
+        "rating": {
+          "value": 100,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "E",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 181,
+          "type": "int"
+        },
+        "rating": {
+          "value": 200,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "D",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 352,
+          "type": "int"
+        },
+        "rating": {
+          "value": 300,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "C",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 577,
+          "type": "int"
+        },
+        "rating": {
+          "value": 400,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "B",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 847,
+          "type": "int"
+        },
+        "rating": {
+          "value": 500,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "enum_property": "B_PLUS",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 1143,
+          "type": "int"
+        },
+        "rating": {
+          "value": 600,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "enum_property": "A",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 1463,
+          "type": "int"
+        },
+        "rating": {
+          "value": 700,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "enum_property": "A_PLUS",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 1808,
+          "type": "int"
+        },
+        "rating": {
+          "value": 800,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "enum_property": "S",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 2209,
+          "type": "int"
+        },
+        "rating": {
+          "value": 900,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "enum_property": "S_PLUS",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 2635,
+          "type": "int"
+        },
+        "rating": {
+          "value": 1000,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "enum_property": "SS",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 3171,
+          "type": "int"
+        },
+        "rating": {
+          "value": 1100,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "enum_property": "SS_PLUS",
+      "description": "",
+      "data": {
+        "performanceScore": {
+          "value": 3841,
+          "type": "int"
+        },
+        "rating": {
+          "value": 1200,
+          "type": "float"
+        }
+      }
+    }
+  ]
+}

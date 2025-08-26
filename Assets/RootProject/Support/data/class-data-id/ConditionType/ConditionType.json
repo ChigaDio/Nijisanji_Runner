@@ -1,0 +1,65 @@
+{
+  "columns": [
+    {
+      "type": "float",
+      "name": "adjustment"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Excellent",
+      "description": "絶好調",
+      "data": {
+        "adjustment": {
+          "value": 1.04,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "Good",
+      "description": "好調",
+      "data": {
+        "adjustment": {
+          "value": 1.02,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "Normal",
+      "description": "普通",
+      "data": {
+        "adjustment": {
+          "value": 1,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "Poor",
+      "description": "不調",
+      "data": {
+        "adjustment": {
+          "value": 0.98,
+          "type": "float"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "Bad",
+      "description": "絶不調",
+      "data": {
+        "adjustment": {
+          "value": 0.96,
+          "type": "float"
+        }
+      }
+    }
+  ]
+}
