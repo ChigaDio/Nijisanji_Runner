@@ -1,0 +1,548 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "BeginTitle",
+      "description": "タイトルで必要のをロード",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "FadeIn",
+      "description": "フェードイン",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "FadeOut",
+      "description": "フェードアウト",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "TitleStartAnim",
+      "description": "タイトルの開始のアニメーション",
+      "variables": []
+    },
+    {
+      "id": 5,
+      "fromState": "TitleStartIdle",
+      "description": "タイトル開始の待機状態(Enterなどおしたら次に）",
+      "variables": []
+    },
+    {
+      "id": 6,
+      "fromState": "TitleSelectStartAnim",
+      "description": "タイトルのセレクトアニメーション",
+      "variables": []
+    },
+    {
+      "id": 7,
+      "fromState": "TitleSelectIdle",
+      "description": "セレクトするまでの待機",
+      "variables": []
+    },
+    {
+      "id": 8,
+      "fromState": "InitGame",
+      "description": "ゲームを最初から",
+      "variables": []
+    },
+    {
+      "id": 9,
+      "fromState": "LoadGame",
+      "description": "ロードゲーム",
+      "variables": []
+    },
+    {
+      "id": 10,
+      "fromState": "BackTitleStartIdle",
+      "description": "戻る(タイトル待機に)",
+      "variables": []
+    },
+    {
+      "id": 11,
+      "fromState": "ExitGame",
+      "description": "ゲーム終了",
+      "variables": []
+    },
+    {
+      "id": 12,
+      "fromState": "OptionGame",
+      "description": "ゲームのオプション設定",
+      "variables": []
+    },
+    {
+      "id": 13,
+      "fromState": "LicenseShow",
+      "description": "借りたモデルやテクスチャなどを紹介",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": -660,
+        "y": 375
+      },
+      "data": {
+        "label": "BeginTitle",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "FadeOut"
+          }
+        ],
+        "description": "タイトルで必要のをロード"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 160
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": -240,
+        "y": 390
+      },
+      "data": {
+        "label": "TitleStartAnim",
+        "targets": [
+          "3"
+        ],
+        "subNodes": [],
+        "description": "タイトルの開始のアニメーション"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": {
+        "x": 165,
+        "y": 390
+      },
+      "data": {
+        "label": "TitleStartIdle",
+        "targets": [
+          "4"
+        ],
+        "subNodes": [],
+        "description": "タイトル開始の待機状態(Enterなどおしたら次に）"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "4",
+      "type": "default",
+      "position": {
+        "x": 510,
+        "y": 390
+      },
+      "data": {
+        "label": "TitleSelectStartAnim",
+        "targets": [
+          "5"
+        ],
+        "subNodes": [],
+        "description": "タイトルのセレクトアニメーション"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "5",
+      "type": "default",
+      "position": {
+        "x": 855,
+        "y": 405
+      },
+      "data": {
+        "label": "TitleSelectIdle",
+        "targets": [
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "subNodes": [],
+        "description": "セレクトするまでの待機"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "6",
+      "type": "default",
+      "position": {
+        "x": 1245,
+        "y": 210
+      },
+      "data": {
+        "label": "InitGame",
+        "targets": [
+          "12"
+        ],
+        "subNodes": [],
+        "description": "ゲームを最初から"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "7",
+      "type": "default",
+      "position": {
+        "x": 1245,
+        "y": 360
+      },
+      "data": {
+        "label": "LoadGame",
+        "targets": [
+          "12"
+        ],
+        "subNodes": [],
+        "description": "ロードゲーム"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "8",
+      "type": "default",
+      "position": {
+        "x": 1245,
+        "y": 555
+      },
+      "data": {
+        "label": "BackTitleStartIdle",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": "戻る(タイトル待機に)"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "9",
+      "type": "default",
+      "position": {
+        "x": 1245,
+        "y": 720
+      },
+      "data": {
+        "label": "ExitGame",
+        "targets": [
+          "12"
+        ],
+        "subNodes": [],
+        "description": "ゲーム終了"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "10",
+      "type": "default",
+      "position": {
+        "x": 1245,
+        "y": 885
+      },
+      "data": {
+        "label": "OptionGame",
+        "targets": [
+          "5"
+        ],
+        "subNodes": [],
+        "description": "ゲームのオプション設定"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "11",
+      "type": "default",
+      "position": {
+        "x": 1245,
+        "y": 1020
+      },
+      "data": {
+        "label": "LicenseShow",
+        "targets": [
+          "5"
+        ],
+        "subNodes": [],
+        "description": "借りたモデルやテクスチャなどを紹介"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "12",
+      "type": "default",
+      "position": {
+        "x": 1785,
+        "y": 555
+      },
+      "data": {
+        "label": "FadeIn",
+        "targets": [],
+        "subNodes": [],
+        "description": "フェードイン"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "3",
+      "id": "e2"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "3",
+      "target": "4",
+      "id": "e3"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "4",
+      "target": "5",
+      "id": "e4"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "6",
+      "id": "e5"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "7",
+      "id": "e6"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "8",
+      "id": "e7"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "8",
+      "target": "2",
+      "id": "e8"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "9",
+      "id": "e9"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "10",
+      "id": "e10"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "10",
+      "target": "5",
+      "id": "e11"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "11",
+      "id": "e12"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "11",
+      "target": "5",
+      "id": "e13"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "6",
+      "target": "12",
+      "id": "e14"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "7",
+      "target": "12",
+      "id": "e15"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "9",
+      "target": "12",
+      "id": "e16"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "BeginGame",
+      "description": "最初のゲーム(ここでとりあえず全体で使うデータをロード)",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "TitleGame",
+      "description": "タイトル画面のゲーム",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "PlayGame",
+      "description": "実際のゲーム",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "ExitGame",
+      "description": "終了ゲーム",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": -60,
+        "y": 330
+      },
+      "data": {
+        "label": "BeginGame",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": "最初のゲーム(ここでとりあえず全体で使うデータをロード)"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": 315,
+        "y": 345
+      },
+      "data": {
+        "label": "TitleGame",
+        "targets": [
+          "3",
+          "4"
+        ],
+        "subNodes": [],
+        "description": "タイトル画面のゲーム"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": {
+        "x": 705,
+        "y": 180
+      },
+      "data": {
+        "label": "PlayGame",
+        "targets": [
+          "4",
+          "2"
+        ],
+        "subNodes": [],
+        "description": "実際のゲーム"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "4",
+      "type": "default",
+      "position": {
+        "x": 705,
+        "y": 540
+      },
+      "data": {
+        "label": "ExitGame",
+        "targets": [],
+        "subNodes": [],
+        "description": "終了ゲーム"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "3",
+      "id": "e2"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "3",
+      "target": "4",
+      "id": "e3"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "3",
+      "target": "2",
+      "id": "e4"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "4",
+      "id": "e5"
+    }
+  ]
+}
