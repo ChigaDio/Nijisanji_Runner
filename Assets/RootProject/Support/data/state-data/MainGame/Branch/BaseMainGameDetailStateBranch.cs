@@ -1,10 +1,13 @@
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using GameCore.States.ID;
+using GameCore.States.Managers;
 
 namespace GameCore.States.Branch
 {
-    public abstract class BaseMainGameDetailStateBranch<F> : BaseDetailStateBranch<GameCore.States.ID.MainGameStateID, GameCore.States.Managers.MainGameStateManagerData, F> where F : GameCore.States.BaseMainGameState
+    public abstract class BaseMainGameDetailStateBranch<TState> : BaseDetailStateBranch<MainGameStateID, MainGameStateManagerData, TState>
+        where TState : GameCore.States.BaseMainGameState
     {
-        public abstract GameCore.States.ID.MainGameStateID ConditionsBranch(GameCore.States.Managers.MainGameStateManagerData manager_data, F state);
+        public override abstract MainGameStateID ConditionsBranch(MainGameStateManagerData manager_data, TState state);
     }
 }

@@ -83,111 +83,107 @@
   "base": [],
   "nodes": [
     {
-      "id": "1",
-      "type": "default",
-      "position": {
-        "x": -660,
-        "y": 375
-      },
       "data": {
+        "description": "タイトルで必要のをロード",
         "label": "BeginTitle",
-        "targets": [
-          "2"
-        ],
         "subNodes": [
           {
             "id": 1,
             "label": "FadeOut"
           }
         ],
-        "description": "タイトルで必要のをロード"
+        "targets": [
+          "13"
+        ]
       },
       "draggable": true,
+      "dragging": false,
+      "id": "1",
       "measured": {
-        "width": 150,
-        "height": 160
+        "height": 160,
+        "width": 150
+      },
+      "position": {
+        "x": -1035,
+        "y": 360
       },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
-      "id": "2",
-      "type": "default",
-      "position": {
-        "x": -240,
-        "y": 390
-      },
       "data": {
+        "description": "タイトルの開始のアニメーション",
         "label": "TitleStartAnim",
+        "subNodes": [],
         "targets": [
           "3"
-        ],
-        "subNodes": [],
-        "description": "タイトルの開始のアニメーション"
+        ]
       },
       "draggable": true,
+      "dragging": false,
+      "id": "2",
       "measured": {
-        "width": 150,
-        "height": 130
+        "height": 130,
+        "width": 150
+      },
+      "position": {
+        "x": -255,
+        "y": 570
       },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
+      "data": {
+        "description": "タイトル開始の待機状態(Enterなどおしたら次に）",
+        "label": "TitleStartIdle",
+        "subNodes": [],
+        "targets": [
+          "4"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
       "id": "3",
-      "type": "default",
+      "measured": {
+        "height": 130,
+        "width": 150
+      },
       "position": {
         "x": 165,
         "y": 390
       },
-      "data": {
-        "label": "TitleStartIdle",
-        "targets": [
-          "4"
-        ],
-        "subNodes": [],
-        "description": "タイトル開始の待機状態(Enterなどおしたら次に）"
-      },
-      "draggable": true,
-      "measured": {
-        "width": 150,
-        "height": 130
-      },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
+      "data": {
+        "description": "タイトルのセレクトアニメーション",
+        "label": "TitleSelectStartAnim",
+        "subNodes": [],
+        "targets": [
+          "5"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
       "id": "4",
-      "type": "default",
+      "measured": {
+        "height": 130,
+        "width": 150
+      },
       "position": {
         "x": 510,
         "y": 390
       },
-      "data": {
-        "label": "TitleSelectStartAnim",
-        "targets": [
-          "5"
-        ],
-        "subNodes": [],
-        "description": "タイトルのセレクトアニメーション"
-      },
-      "draggable": true,
-      "measured": {
-        "width": 150,
-        "height": 130
-      },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
-      "id": "5",
-      "type": "default",
-      "position": {
-        "x": 855,
-        "y": 405
-      },
       "data": {
+        "description": "セレクトするまでの待機",
         "label": "TitleSelectIdle",
+        "subNodes": [],
         "targets": [
           "6",
           "7",
@@ -195,179 +191,371 @@
           "9",
           "10",
           "11"
-        ],
-        "subNodes": [],
-        "description": "セレクトするまでの待機"
+        ]
       },
       "draggable": true,
+      "dragging": false,
+      "id": "5",
       "measured": {
-        "width": 150,
-        "height": 110
+        "height": 110,
+        "width": 150
+      },
+      "position": {
+        "x": 855,
+        "y": 405
       },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
+      "data": {
+        "description": "ゲームを最初から",
+        "label": "InitGame",
+        "subNodes": [],
+        "targets": [
+          "12"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
       "id": "6",
-      "type": "default",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
       "position": {
         "x": 1245,
         "y": 210
       },
-      "data": {
-        "label": "InitGame",
-        "targets": [
-          "12"
-        ],
-        "subNodes": [],
-        "description": "ゲームを最初から"
-      },
-      "draggable": true,
-      "measured": {
-        "width": 150,
-        "height": 110
-      },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
+      "data": {
+        "description": "ロードゲーム",
+        "label": "LoadGame",
+        "subNodes": [],
+        "targets": [
+          "12"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
       "id": "7",
-      "type": "default",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
       "position": {
         "x": 1245,
         "y": 360
       },
-      "data": {
-        "label": "LoadGame",
-        "targets": [
-          "12"
-        ],
-        "subNodes": [],
-        "description": "ロードゲーム"
-      },
-      "draggable": true,
-      "measured": {
-        "width": 150,
-        "height": 110
-      },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
-      "id": "8",
-      "type": "default",
-      "position": {
-        "x": 1245,
-        "y": 555
-      },
       "data": {
+        "description": "戻る(タイトル待機に)",
         "label": "BackTitleStartIdle",
+        "subNodes": [],
         "targets": [
           "2"
-        ],
-        "subNodes": [],
-        "description": "戻る(タイトル待機に)"
+        ]
       },
       "draggable": true,
+      "dragging": false,
+      "id": "8",
       "measured": {
-        "width": 150,
-        "height": 110
+        "height": 110,
+        "width": 150
       },
-      "selected": false,
-      "dragging": false
+      "position": {
+        "x": 1230,
+        "y": 540
+      },
+      "selected": true,
+      "type": "default"
     },
     {
+      "data": {
+        "description": "ゲーム終了",
+        "label": "ExitGame",
+        "subNodes": [],
+        "targets": [
+          "12"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
       "id": "9",
-      "type": "default",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
       "position": {
         "x": 1245,
         "y": 720
       },
-      "data": {
-        "label": "ExitGame",
-        "targets": [
-          "12"
-        ],
-        "subNodes": [],
-        "description": "ゲーム終了"
-      },
-      "draggable": true,
-      "measured": {
-        "width": 150,
-        "height": 110
-      },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
+      "data": {
+        "description": "ゲームのオプション設定",
+        "label": "OptionGame",
+        "subNodes": [],
+        "targets": [
+          "5"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
       "id": "10",
-      "type": "default",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
       "position": {
         "x": 1245,
         "y": 885
       },
-      "data": {
-        "label": "OptionGame",
-        "targets": [
-          "5"
-        ],
-        "subNodes": [],
-        "description": "ゲームのオプション設定"
-      },
-      "draggable": true,
-      "measured": {
-        "width": 150,
-        "height": 110
-      },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
+      "data": {
+        "description": "借りたモデルやテクスチャなどを紹介",
+        "label": "LicenseShow",
+        "subNodes": [],
+        "targets": [
+          "5"
+        ]
+      },
+      "draggable": true,
+      "dragging": false,
       "id": "11",
-      "type": "default",
+      "measured": {
+        "height": 130,
+        "width": 150
+      },
       "position": {
         "x": 1245,
         "y": 1020
       },
-      "data": {
-        "label": "LicenseShow",
-        "targets": [
-          "5"
-        ],
-        "subNodes": [],
-        "description": "借りたモデルやテクスチャなどを紹介"
-      },
-      "draggable": true,
-      "measured": {
-        "width": 150,
-        "height": 130
-      },
       "selected": false,
-      "dragging": false
+      "type": "default"
     },
     {
+      "data": {
+        "description": "フェードイン",
+        "label": "FadeIn",
+        "subNodes": [],
+        "targets": []
+      },
+      "draggable": true,
+      "dragging": false,
       "id": "12",
-      "type": "default",
+      "measured": {
+        "height": 110,
+        "width": 150
+      },
       "position": {
         "x": 1785,
         "y": 555
       },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "id": "13",
+      "type": "default",
+      "position": {
+        "x": -660,
+        "y": 375
+      },
       "data": {
-        "label": "FadeIn",
-        "targets": [],
+        "label": "FadeOut",
+        "targets": [
+          "2"
+        ],
         "subNodes": [],
-        "description": "フェードイン"
+        "description": "フェードアウト"
       },
       "draggable": true,
       "measured": {
         "width": 150,
         "height": 110
       },
-      "selected": true,
+      "selected": false,
       "dragging": false
     }
   ],
   "edges": [
+    {
+      "id": "e2",
+      "source": "2",
+      "target": "3",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e3",
+      "source": "3",
+      "target": "4",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e4",
+      "source": "4",
+      "target": "5",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e5",
+      "source": "5",
+      "target": "6",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e6",
+      "source": "5",
+      "target": "7",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e7",
+      "source": "5",
+      "target": "8",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e8",
+      "source": "8",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e9",
+      "source": "5",
+      "target": "9",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e10",
+      "source": "5",
+      "target": "10",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e11",
+      "source": "10",
+      "target": "5",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e12",
+      "source": "5",
+      "target": "11",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e13",
+      "source": "11",
+      "target": "5",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e14",
+      "source": "6",
+      "target": "12",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e15",
+      "source": "7",
+      "target": "12",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e16",
+      "source": "9",
+      "target": "12",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
     {
       "type": "custom",
       "animated": true,
@@ -376,173 +564,19 @@
         "strokeWidth": 3
       },
       "source": "1",
-      "target": "2",
-      "id": "e1"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "2",
-      "target": "3",
-      "id": "e2"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "3",
-      "target": "4",
-      "id": "e3"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "4",
-      "target": "5",
-      "id": "e4"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "5",
-      "target": "6",
-      "id": "e5"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "5",
-      "target": "7",
-      "id": "e6"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "5",
-      "target": "8",
-      "id": "e7"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "8",
-      "target": "2",
-      "id": "e8"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "5",
-      "target": "9",
-      "id": "e9"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "5",
-      "target": "10",
-      "id": "e10"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "10",
-      "target": "5",
-      "id": "e11"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "5",
-      "target": "11",
-      "id": "e12"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "11",
-      "target": "5",
-      "id": "e13"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "6",
-      "target": "12",
-      "id": "e14"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "7",
-      "target": "12",
-      "id": "e15"
-    },
-    {
-      "type": "custom",
-      "animated": true,
-      "style": {
-        "stroke": "#00FF00",
-        "strokeWidth": 3
-      },
-      "source": "9",
-      "target": "12",
+      "target": "13",
       "id": "e16"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "13",
+      "target": "2",
+      "id": "e17"
     }
   ]
 }

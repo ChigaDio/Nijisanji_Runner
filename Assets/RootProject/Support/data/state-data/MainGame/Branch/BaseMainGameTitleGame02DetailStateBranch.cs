@@ -1,20 +1,22 @@
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using GameCore.States.ID;
+using GameCore.States.Managers;
 
 namespace GameCore.States.Branch
 {
     public abstract class BaseMainGameTitleGame02DetailStateBranch : BaseMainGameTitleGameDetailStateBranch
     {
-        public override GameCore.States.ID.MainGameStateID ConditionsBranch(GameCore.States.Managers.MainGameStateManagerData manager_data, GameCore.States.MainGameTitleGameState state)
+        public override MainGameStateID ConditionsBranch(MainGameStateManagerData manager_data, MainGameTitleGameState state)
         {
             if (MainGameTitleGame_to_PlayGame03(manager_data, state))
-                return GameCore.States.ID.MainGameStateID.PlayGame03;
+                return MainGameStateID.PlayGame03;
             if (MainGameTitleGame_to_ExitGame04(manager_data, state))
-                return GameCore.States.ID.MainGameStateID.ExitGame04;
-            return GameCore.States.ID.MainGameStateID.None;
+                return MainGameStateID.ExitGame04;
+            return MainGameStateID.None;
         }
 
-        public abstract bool MainGameTitleGame_to_PlayGame03(GameCore.States.Managers.MainGameStateManagerData manager_data, GameCore.States.MainGameTitleGameState state);
-        public abstract bool MainGameTitleGame_to_ExitGame04(GameCore.States.Managers.MainGameStateManagerData manager_data, GameCore.States.MainGameTitleGameState state);
+        public override abstract bool MainGameTitleGame_to_PlayGame03(MainGameStateManagerData manager_data, MainGameTitleGameState state);
+        public override abstract bool MainGameTitleGame_to_ExitGame04(MainGameStateManagerData manager_data, MainGameTitleGameState state);
     }
 }

@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 namespace GameCore.States.Managers
 {
     public abstract class BaseStateManagerData<T> where T : Enum

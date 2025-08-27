@@ -1,10 +1,16 @@
+using System;
+using UnityEngine;
+using GameCore.States.Managers;
+
 namespace GameCore.States.Branch
 {
-    public abstract class BaseStateBranch<T, E, F> 
-        where T : Enum
-        where E : GameCore.States.Managers.BaseStateManagerData<T>
-        where F : GameCore.States.BaseState<E>
+    public abstract class BaseStateBranch<TStateId, TManagerData, TState, TDetailState>
+        where TStateId : Enum
+        where TManagerData : BaseStateManagerData<TStateId>
+        where TState : BaseState<TStateId, TManagerData>
+        where TDetailState : BaseDetailStateBranch<TStateId, TManagerData, TState>
     {
-        public abstract T ConditionsBranch(E state_manager_data, F state);
+        public abstract TStateId ConditionsBranch(TManagerData manager_data, TState state);
+        public abstract TDetailState Factory(TStateId id);
     }
 }

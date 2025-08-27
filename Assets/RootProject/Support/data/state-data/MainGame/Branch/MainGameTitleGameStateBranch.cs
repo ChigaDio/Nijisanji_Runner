@@ -1,22 +1,24 @@
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using GameCore.States.ID;
+using GameCore.States.Managers;
 
 namespace GameCore.States.Branch
 {
-    public class MainGameTitleGameStateBranch : GameCore.States.BaseMainGameStateBranch<MainGameTitleGameState>
+    public class MainGameTitleGameStateBranch : BaseMainGameStateBranch<MainGameTitleGameState, BaseMainGameTitleGameDetailStateBranch>
     {
-        public override GameCore.States.ID.MainGameStateID ConditionsBranch(GameCore.States.Managers.MainGameStateManagerData manager_data, MainGameTitleGameState state)
+        public override MainGameStateID ConditionsBranch(MainGameStateManagerData manager_data, MainGameTitleGameState state)
         {
-            var id = manager_data.GetNowID();
+            var id = manager_data.GetNowStateID();
             var branch = Factory(id);
-            return branch != null ? branch.ConditionsBranch(manager_data, state) : GameCore.States.ID.MainGameStateID.None;
+            return branch != null ? branch.ConditionsBranch(manager_data, state) : MainGameStateID.None;
         }
 
-        public BaseMainGameDetailStateBranch Factory(GameCore.States.ID.MainGameStateID id)
+        public override BaseMainGameTitleGameDetailStateBranch Factory(MainGameStateID id)
         {
             switch (id)
             {
-                case GameCore.States.ID.MainGameStateID.TitleGame02:
+                case MainGameStateID.TitleGame02:
                     return new MainGameTitleGame02DetailStateBranch();
                 default:
                     return null;

@@ -1,8 +1,10 @@
 using UnityEngine;
+using GameCore.States.Managers;
+using GameCore.States.ID;
 
 namespace GameCore.States
 {
-    public abstract class BaseTitleGameState : BaseState<GameCore.States.Managers.TitleGameStateManagerData>
+    public abstract class BaseTitleGameState : BaseState<TitleGameStateID, TitleGameStateManagerData>
     {
     }
 }

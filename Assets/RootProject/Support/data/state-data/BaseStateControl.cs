@@ -1,9 +1,11 @@
+using System;
+using System.Collections.Generic;
 namespace GameCore.States.Control
 {
     public abstract class BaseStateControl<T, E, F>
         where T : Enum
         where E : GameCore.States.Managers.BaseStateManagerData<T>
-        where F : GameCore.States.BaseState<E>
+        where F : GameCore.States.BaseState<T,E>
     {
 
         protected E state_manager_data;
@@ -29,7 +31,7 @@ namespace GameCore.States.Control
 
         protected abstract T GetInitStartID();
         protected  void OnStartState(
-    CharacterStateID state_id,
+    T state_id,
     Action<E> action)
         {
             state = FactoryState(state_id);

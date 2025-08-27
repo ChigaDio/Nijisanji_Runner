@@ -4,3 +4,9 @@
 [submodule "Assets/RootProject/Support/SupportChigadio"]
 	path = Assets/RootProject/Support/SupportChigadio
 	url = https://github.com/ChigaDio/SupportChigadio.git
+[submodule "Assets/RootProject/Scripts/Lib/AdressableSupportLib"]
+	path = Assets/RootProject/Scripts/Lib/AdressableSupportLib
+	url = https://github.com/ChigaDio/AdressableSupportLib.git
+[submodule "Assets/RootProject/Scripts/Lib/ExtensionsSupportLib"]
+	path = Assets/RootProject/Scripts/Lib/ExtensionsSupportLib
+	url = https://github.com/ChigaDio/ExtensionsSupportLib.git

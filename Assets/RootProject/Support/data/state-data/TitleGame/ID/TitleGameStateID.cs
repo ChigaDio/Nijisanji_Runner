@@ -14,6 +14,7 @@ namespace GameCore.States.ID
       OptionGame,
       LicenseShow,
       FadeIn,
+      FadeOut,
       BeginTitle01,
       TitleStartAnim02,
       TitleStartIdle03,
@@ -26,6 +27,7 @@ namespace GameCore.States.ID
       OptionGame10,
       LicenseShow11,
       FadeIn12,
+      FadeOut13,
        Max
    }
 }

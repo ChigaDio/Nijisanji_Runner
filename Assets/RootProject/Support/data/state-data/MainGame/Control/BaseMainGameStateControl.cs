@@ -19,14 +19,14 @@ namespace GameCore.States.Control
             if (!state.IsActive) return;
 
             var id = state_manager_data.PopStateID();
-            if(id == default) id = state_manager_data.GetNowID();
+            if(id == default) id = state_manager_data.GetNowStateID();
             switch (id)
             {
                 case MainGameStateID.BeginGame:
                 {
                     state.Exit(state_manager_data);
-                    var id = state_manager_data.PopStateID();
-                    if(id == default) id = state_manager_data.GetNowID();
+                    id = state_manager_data.PopStateID();
+                    if(id == default) id = state_manager_data.GetNowStateID();
                     state = FactoryState(id);
                     if (state == null)
                     {
@@ -34,12 +34,13 @@ namespace GameCore.States.Control
                         return;
                     }
                     state.Enter(state_manager_data);
+                    return;
                 }
                 case MainGameStateID.TitleGame:
                 {
                     state.Exit(state_manager_data);
-                    var id = state_manager_data.PopStateID();
-                    if(id == default) id = state_manager_data.GetNowID();
+                    id = state_manager_data.PopStateID();
+                    if(id == default) id = state_manager_data.GetNowStateID();
                     state = FactoryState(id);
                     if (state == null)
                     {
@@ -47,12 +48,13 @@ namespace GameCore.States.Control
                         return;
                     }
                     state.Enter(state_manager_data);
+                    return;
                 }
                 case MainGameStateID.PlayGame:
                 {
                     state.Exit(state_manager_data);
-                    var id = state_manager_data.PopStateID();
-                    if(id == default) id = state_manager_data.GetNowID();
+                    id = state_manager_data.PopStateID();
+                    if(id == default) id = state_manager_data.GetNowStateID();
                     state = FactoryState(id);
                     if (state == null)
                     {
@@ -60,12 +62,13 @@ namespace GameCore.States.Control
                         return;
                     }
                     state.Enter(state_manager_data);
+                    return;
                 }
                 case MainGameStateID.ExitGame:
                 {
                     state.Exit(state_manager_data);
-                    var id = state_manager_data.PopStateID();
-                    if(id == default) id = state_manager_data.GetNowID();
+                    id = state_manager_data.PopStateID();
+                    if(id == default) id = state_manager_data.GetNowStateID();
                     state = FactoryState(id);
                     if (state == null)
                     {
@@ -73,12 +76,14 @@ namespace GameCore.States.Control
                         return;
                     }
                     state.Enter(state_manager_data);
+                    return;
                 }
                 case MainGameStateID.BeginGame01:
                 {
                     state.Exit(state_manager_data);
-                    state_manager_data.ChangeStateNowID(MainGameStateID.TitleGame02);
-                    state = FactoryState(state_manager_data.GetNowID());
+                    var next_id = MainGameStateID.TitleGame02;
+                    state_manager_data.ChangeStateNowID(next_id);
+                    state = FactoryState(next_id);
                     if (state == null)
                     {
                         is_finish = true;
@@ -90,7 +95,7 @@ namespace GameCore.States.Control
                 case MainGameStateID.TitleGame02:
                 {
                     state.Exit(state_manager_data);
-                    var next_id = state.BranchNextState(state_manager_data);
+                   var next_id = state.BranchNextState(state_manager_data);
                     state_manager_data.ChangeStateNowID(next_id);
                     if (next_id == MainGameStateID.None)
                     {
@@ -109,7 +114,7 @@ namespace GameCore.States.Control
                 case MainGameStateID.PlayGame03:
                 {
                     state.Exit(state_manager_data);
-                    var next_id = state.BranchNextState(state_manager_data);
+                   var next_id = state.BranchNextState(state_manager_data);
                     state_manager_data.ChangeStateNowID(next_id);
                     if (next_id == MainGameStateID.None)
                     {
