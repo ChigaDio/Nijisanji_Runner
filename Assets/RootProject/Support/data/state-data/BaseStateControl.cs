@@ -4,7 +4,7 @@ namespace GameCore.States.Control
 {
     public abstract class BaseStateControl<T, E, F>
         where T : Enum
-        where E : GameCore.States.Managers.BaseStateManagerData<T>
+        where E : GameCore.States.Managers.BaseStateManagerData<T>, new()
         where F : GameCore.States.BaseState<T,E>
     {
 
@@ -34,6 +34,7 @@ namespace GameCore.States.Control
     T state_id,
     Action<E> action)
         {
+            state_manager_data = new E();
             state = FactoryState(state_id);
             action?.Invoke(state_manager_data);
             state.Enter(state_manager_data);
